@@ -1,6 +1,10 @@
 #include<stdio.h>
 #include <windows.h>//header file for accessing windows API to interact with WINDOWS OS
 
+void details();
+void view();
+void marks_entry();
+void attendance();
 //Windows API to access console and clear it.
 void clrscr() {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -29,248 +33,377 @@ int main(){
     printf("\n");
     scanf("%d",&option);
 
-    switch(option){//Switch for executing the selected option from Main Menu by user
-    case 1://Outer case 1 for managing student details
-        
-        clrscr();
-        printf("Enter Branch:\n");
-        printf("\n");
-        printf("1. Computer Science and Engineering\n");
-        printf("2. Information Science and Engineering\n");
-        printf("3. Artificial Intelligence and Machine Learning\n");
-        printf("4. Computer Science and Design\n");
-        printf("5. Computer Science and Business Studies\n");
-        printf("6. Electronics and Communication Engineering\n");
-        printf("\n");
-        scanf("%d",&branch);
-
-        switch(branch){//Switch case for selecting respective branch
-        case 1:
-        
-        clrscr();
-        printf("Enter Section:\n");
-        printf("\n");
-        printf("A\n");
-        printf("B\n");
-        printf("C\n");
-        printf("\n");
-        scanf("%c",&section);
-        switch(section){
-        case 'A':
-        clrscr();
-        printf("1. Add Student Record\n");
-        printf("2. Update Student Record\n");
-        printf("3. Delete Student Record\n");
-        break;
-        case 'B':
-        clrscr();
-        printf("Select Option");
-        printf("\n");
-        printf("1. Add Student Record\n");
-        printf("2. Update Student Record\n");
-        printf("3. Delete Student Record\n");
-        break;
-        case 'C':
-        clrscr();
-        printf("Select Option");
-        printf("\n");
-        printf("1. Add Student Record\n");
-        printf("2. Update Student Record\n");
-        printf("3. Delete Student Record\n");
-        break;
-        }
-
-
-        case 2:
-        clrscr();
-        printf("Enter Section:\n");
-        printf("\n");
-        printf("A\n");
-        printf("B\n");
-        printf("\n");
-        scanf("%c",&section);
-        switch(section){
-        case 'A':
-        clrscr();
-        printf("1. Add Student Record\n");
-        printf("2. Update Student Record\n");
-        printf("3. Delete Student Record\n");
-        break;
-        case 'B':
-        clrscr();
-        printf("Select Option");
-        printf("\n");
-        printf("1. Add Student Record\n");
-        printf("2. Update Student Record\n");
-        printf("3. Delete Student Record\n");
-        break;
-        }
-
-        case 3:
-        clrscr();
-        printf("Enter Section:\n");
-        printf("\n");
-        printf("A\n");
-        printf("B\n");
-        printf("C\n");
-        printf("\n");
-        scanf("%c",&section);
-        switch(section){
-        case 'A':
-        clrscr();
-        printf("1. Add Student Record\n");
-        printf("2. Update Student Record\n");
-        printf("3. Delete Student Record\n");
-        break;
-        case 'B':
-        clrscr();
-        printf("Select Option");
-        printf("\n");
-        printf("1. Add Student Record\n");
-        printf("2. Update Student Record\n");
-        printf("3. Delete Student Record\n");
-        break;
-        }
-
-        case 4:
-        clrscr();
-        printf("1. Add Student Record\n");
-        printf("2. Update Student Record\n");
-        printf("3. Delete Student Record\n");
-        break;
-
-        case 5:
-        clrscr();
-        printf("1. Add Student Record\n");
-        printf("2. Update Student Record\n");
-        printf("3. Delete Student Record\n");
-        break;
-
-        case 6:
-        clrscr();
-        printf("1. Add Student Record\n");
-        printf("2. Update Student Record\n");
-        printf("3. Delete Student Record\n");
-        break;
-        }
-
-
-
-    case 2://Outer case 2 for viewing student details
-        
-        
-        clrscr();
-        printf("Enter Branch:\n");
-        printf("\n");
-        printf("1. Computer Science and Engineering\n");
-        printf("2. Information Science and Engineering\n");
-        printf("3. Artificial Intelligence and Machine Learning\n");
-        printf("4. Computer Science and Design\n");
-        printf("5. Computer Science and Business Studies\n");
-        printf("6. Electronics and Communication Engineering\n");
-        printf("\n");
-        scanf("%d",&branch);
-        switch(branch){//Switch case for selecting respective branch
-        case 1:
-            clrscr();
-            printf("Enter Section:\n");
-            printf("\n");
-            printf("A\n");
-            printf("B\n");
-            printf("C\n");
-            printf("\n");
-            scanf("%c",&section);
-            break;
-        case 2:
-            clrscr();
-            printf("Enter Section:\n");
-            printf("\n");
-            printf("A\n");
-            printf("B\n");
-            printf("\n");
-            scanf("%c",&section);
-            break;
-        case 3:
-            clrscr();
-            printf("Enter Section:\n");
-            printf("\n");
-            printf("A\n");
-            printf("B\n");
-            printf("\n");
-            scanf("%c",&section);
-            break;
-        case 4:
-            clrscr();
-            break;
-        case 5:
-            clrscr();
-            break;
-        case 6:
-            clrscr();
-            break;
-        }
-        break;
-
-
-    case 3://Outer case 3 for marks entry
-        clrscr();
-        printf("1. CIE 1\n");
-        printf("2. CIE 2\n");
-        printf("3. SEE\n");
-        break;
-
-
-    case 4://Outer case 4 for attendance
-        
-        clrscr();
-        printf("Enter Branch:\n");
-        printf("\n");
-        printf("1. Computer Science and Engineering\n");
-        printf("2. Information Science and Engineering\n");
-        printf("3. Artificial Intelligence and Machine Learning\n");
-        printf("4. Computer Science and Design\n");
-        printf("5. Computer Science and Business Studies\n");
-        printf("6. Electronics and Communication Engineering\n");
-        printf("\n");
-        scanf("%d",&branch);
-        switch(branch){
-        case 1:
-            clrscr();
-            printf("Enter Section:\n");
-            printf("\n");
-            printf("A\n");
-            printf("B\n");
-            printf("C\n");
-            break;
-        case 2:
-            clrscr();
-            printf("Enter Section:\n");
-            printf("\n");
-            printf("A\n");
-            printf("B\n");
-            break;
-        case 3:
-            clrscr();
-            printf("Enter Section:\n");
-            printf("\n");
-            printf("A\n");
-            printf("B\n");
-            break;
-        case 4:
-            clrscr();
-            break;
-        case 5:
-            clrscr();
-            break;
-        case 6:
-            clrscr();
-            break;
-        }
-        break;
-
-
-    case 5://outer case for termination of program
+    if(option == 1){
+        details();
+    }
+    else if(option == 2){
+        view();
+    }
+    else if(option == 3){
+        marks_entry();
+    }
+    else if(option == 4){
+        attendance();
+    }
+    else if(option == 5){
         return 1;
+    }
+    else{
+        printf("Invalid choice");
+    }
+}
+
+void details(){
+    int option,operation;
+    char choice;
+    clrscr();
+    printf("Select branch: ");
+    printf("\n");
+    printf("1. Computer Science and Engineering\n");
+    printf("2. Information Science and Engineering\n");
+    printf("3. Artificial Intellingence and Machine Learning\n");
+    printf("4. Computer Science and Design\n");
+    printf("5. Computer Science and Business Studies\n");
+    printf("6. Electronics and Communication Engineering\n");
+    printf("\n");
+    printf("Please enter your choice: ");
+    scanf("%d",&option);
+    switch(option){
+        case 1:
+        clrscr();
+        printf("Select section:\n");
+        printf("\n");
+        printf("A\n");
+        printf("B\n");
+        printf("C\n");
+        printf("\n");
+        printf("Please enter your choice: ");
+        scanf(" %c",&choice);
+        switch(choice){
+            case 'A':
+            clrscr();
+            printf("SELECT OPTION\n");
+            printf("\n");
+            printf("1. Add Student Record\n");
+            printf("2. Delete Student Record\n");
+            printf("3. Update Student Record\n");
+            printf("\n");
+            printf("Please enter your choice: ");
+            scanf(" %d",&operation);
+            break;
+            case 'B':
+            clrscr();
+            printf("SELECT OPTION\n");
+            printf("\n");
+            printf("1. Add Student Record\n");
+            printf("2. Delete Student Record\n");
+            printf("3. Update Student Record\n");
+            printf("\n");
+            printf("Please enter your choice: ");
+            scanf(" %d",&operation);
+            break;
+            case 'C':
+            clrscr();
+            printf("SELECT OPTION\n");
+            printf("\n");
+            printf("1. Add Student Record\n");
+            printf("2. Delete Student Record\n");
+            printf("3. Update Student Record\n");
+            printf("\n");
+            printf("Please enter your choice: ");
+            scanf(" %d",&operation);
+            break;
+        }
+        break;
+        case 2:
+        clrscr();
+        printf("Select section:\n");
+        printf("\n");
+        printf("A\n");
+        printf("B\n");
+        printf("\n");
+        printf("Please enter your choice: ");
+        scanf(" %c",&choice);
+        switch(choice){
+            case 'A':
+            clrscr();
+            printf("SELECT OPTION\n");
+            printf("\n");
+            printf("1. Add Student Record\n");
+            printf("2. Delete Student Record\n");
+            printf("3. Update Student Record\n");
+            printf("\n");
+            printf("Please enter your choice: ");
+            scanf(" %d",&operation);
+            break;
+            case 'B':
+            clrscr();
+            printf("SELECT OPTION\n");
+            printf("\n");
+            printf("1. Add Student Record\n");
+            printf("2. Delete Student Record\n");
+            printf("3. Update Student Record\n");
+            printf("\n");
+            printf("Please enter your choice: ");
+            scanf(" %d",&operation);
+            break;
+        }
+        break;
+        case 3:
+        clrscr();
+        printf("Select section:\n");
+        printf("\n");
+        printf("A\n");
+        printf("B\n");
+        printf("\n");
+        printf("Please enter your choice: ");
+        scanf(" %c",&choice);
+        switch(choice){
+            case 'A':
+            clrscr();
+            printf("SELECT OPTION\n");
+            printf("\n");
+            printf("1. Add Student Record\n");
+            printf("2. Delete Student Record\n");
+            printf("3. Update Student Record\n");
+            printf("\n");
+            printf("Please enter your choice: ");
+            scanf(" %d",&operation);
+            break;
+            case 'B':
+            clrscr();
+            printf("SELECT OPTION\n");
+            printf("\n");
+            printf("1. Add Student Record\n");
+            printf("2. Delete Student Record\n");
+            printf("3. Update Student Record\n");
+            printf("\n");
+            printf("Please enter your choice: ");
+            scanf(" %d",&operation);
+            break;
+        }
+        break;
+        case 4:
+        clrscr();
+        printf("SELECT OPTION\n");
+        printf("\n");
+        printf("1. Add Student Record\n");
+        printf("2. Delete Student Record\n");
+        printf("3. Update Student Record\n");
+        printf("\n");
+        printf("Please enter your choice: ");
+        scanf(" %d",&operation);
+        break;
+        case 5:
+        clrscr();
+        printf("SELECT OPTION\n");
+        printf("\n");
+        printf("1. Add Student Record\n");
+        printf("2. Delete Student Record\n");
+        printf("3. Update Student Record\n");
+        printf("\n");
+        printf("Please enter your choice: ");
+        scanf(" %d",&operation);
+        break;
+        case 6:
+        clrscr();
+        printf("SELECT OPTION\n");
+        printf("\n");
+        printf("1. Add Student Record\n");
+        printf("2. Delete Student Record\n");
+        printf("3. Update Student Record\n");
+        printf("\n");
+        printf("Please enter your choice: ");
+        scanf(" %d",&operation);
+        break;
+        default:
+        printf("Invalid Choice");
+        break;
+    }
+}
+
+void view(){
+    int option;
+    char choice;
+    clrscr();
+    printf("Select branch: ");
+    printf("\n");
+    printf("1. Computer Science and Engineering\n");
+    printf("2. Information Science and Engineering\n");
+    printf("3. Artificial Intellingence and Machine Learning\n");
+    printf("4. Computer Science and Design\n");
+    printf("5. Computer Science and Business Studies\n");
+    printf("6. Electronics and Communication Engineering\n");
+    printf("\n");
+    printf("Please enter your choice: ");
+    scanf("%d",&option);
+    switch(option){
+        case 1:
+        clrscr();
+        printf("Select Section\n");
+        printf("\n");
+        printf("A\n");
+        printf("B\n");
+        printf("C\n");
+        printf("\n");
+        printf("Please enter your choice: ");
+        scanf(" %c",&choice);
+        break;
+        case 2:
+        clrscr();
+        printf("Select Section\n");
+        printf("\n");
+        printf("A\n");
+        printf("B\n");
+        printf("\n");
+        printf("Please enter your choice: ");
+        scanf(" %c",&choice);
+        break;
+        case 3:
+        clrscr();
+        printf("Select Section\n");
+        printf("\n");
+        printf("A\n");
+        printf("B\n");
+        printf("\n");
+        printf("Please enter your choice: ");
+        scanf(" %c",&choice);
+        break;
+        case 4:
+        clrscr();
+        break;
+        case 5:
+        clrscr();
+        break;
+        case 6:
+        clrscr();
+        break;
+        default:
+        printf("Invalid Choice");
+        break;
+    }
+}
+
+void marks_entry(){
+    int option;
+    char choice;
+    clrscr();
+    printf("Select branch: ");
+    printf("\n");
+    printf("1. Computer Science and Engineering\n");
+    printf("2. Information Science and Engineering\n");
+    printf("3. Artificial Intellingence and Machine Learning\n");
+    printf("4. Computer Science and Design\n");
+    printf("5. Computer Science and Business Studies\n");
+    printf("6. Electronics and Communication Engineering\n");
+    printf("\n");
+    printf("Please enter your choice: ");
+    scanf("%d",&option);
+    switch(option){
+        case 1:
+        clrscr();
+        printf("Select Section\n");
+        printf("\n");
+        printf("A\n");
+        printf("B\n");
+        printf("C\n");
+        printf("\n");
+        printf("Please enter your choice: ");
+        scanf(" %c",&choice);
+        break;
+        case 2:
+        clrscr();
+        printf("Select Section\n");
+        printf("\n");
+        printf("A\n");
+        printf("B\n");
+        printf("\n");
+        printf("Please enter your choice: ");
+        scanf(" %c",&choice);
+        break;
+        case 3:
+        clrscr();
+        printf("Select Section\n");
+        printf("\n");
+        printf("A\n");
+        printf("B\n");
+        printf("\n");
+        printf("Please enter your choice: ");
+        scanf(" %c",&choice);
+        break;
+        case 4:
+        clrscr();
+        break;
+        case 5:
+        clrscr();
+        break;
+        case 6:
+        clrscr();
+        break;
+        default:
+        printf("Invalid Choice");
+        break;
+    }
+}
+
+void attendance(){
+    int option;
+    char choice;
+    clrscr();
+    printf("Select branch: ");
+    printf("\n");
+    printf("1. Computer Science and Engineering\n");
+    printf("2. Information Science and Engineering\n");
+    printf("3. Artificial Intellingence and Machine Learning\n");
+    printf("4. Computer Science and Design\n");
+    printf("5. Computer Science and Business Studies\n");
+    printf("6. Electronics and Communication Engineering\n");
+    printf("\n");
+    printf("Please enter your choice: ");
+    scanf("%d",&option);
+    switch(option){
+        case 1:
+        clrscr();
+        printf("Select Section\n");
+        printf("\n");
+        printf("A\n");
+        printf("B\n");
+        printf("C\n");
+        printf("\n");
+        printf("Please enter your choice: ");
+        scanf(" %c",&choice);
+        break;
+        case 2:
+        clrscr();
+        printf("Select Section\n");
+        printf("\n");
+        printf("A\n");
+        printf("B\n");
+        printf("\n");
+        printf("Please enter your choice: ");
+        scanf(" %c",&choice);
+        break;
+        case 3:
+        clrscr();
+        printf("Select Section\n");
+        printf("\n");
+        printf("A\n");
+        printf("B\n");
+        printf("\n");
+        printf("Please enter your choice: ");
+        scanf(" %c",&choice);
+        break;
+        case 4:
+        clrscr();
+        break;
+        case 5:
+        clrscr();
+        break;
+        case 6:
+        clrscr();
+        break;
+        default:
+        printf("Invalid Choice");
         break;
     }
 }
