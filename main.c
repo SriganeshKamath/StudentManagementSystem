@@ -17,9 +17,18 @@ void clrscr() {
     SetConsoleCursorPosition(hConsole, coord);
 }
 
+struct student{
+    char name[100];
+    int usn;
+    int marks;
+    float gpa;
+};
+struct  student csea[80],cseb[80],csec[80],isea[80],iseb[80],aimla[80],aimlb[80],csd[80],csbs[80],ece[80];
+
 int main(){
     int option,branch;
     char section;
+    FILE *ptr;
     //Main menu
     printf("STUDENT RECORD MANAGEMENT SYSTEM\n");
     printf("\n");
@@ -56,6 +65,7 @@ int main(){
 void details(){
     int option,operation;
     char choice;
+    char more_string[5];
     clrscr();
     printf("Select branch: ");
     printf("\n");
